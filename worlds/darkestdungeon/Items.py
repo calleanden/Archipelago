@@ -23,10 +23,13 @@ item_list = [
     DDItemData(ItemNames.COVE_KEY.value, classification=ItemClassification.progression, category=ItemCategories.KEY),
     DDItemData(ItemNames.RUINS_KEY.value, classification=ItemClassification.progression, category=ItemCategories.KEY),
     DDItemData(ItemNames.DARKEST_KEY.value, classification=ItemClassification.progression, category=ItemCategories.KEY),
-    DDItemData(ItemNames.ABBEY_CLOISTER.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
-    DDItemData(ItemNames.BLACKSMITH_WEAPONSMITHING.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
+    DDItemData(ItemNames.ABBEY_CLOISTER_PROG.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
+    DDItemData(ItemNames.ABBEY_TRANSEPT_PROG.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
+    DDItemData(ItemNames.ABBEY_PENANCE_PROG.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
+    DDItemData(ItemNames.BLACKSMITH_WEAPONSMITHING_PROG.value, classification=ItemClassification.useful, category=ItemCategories.UPGRADE),
     DDItemData(ItemNames.RUINS_NECRO_KEY_1.value, classification=ItemClassification.progression, category=ItemCategories.KEY),
     DDItemData(ItemNames.RUINS_NECRO_TROPHY_1.value, classification=ItemClassification.progression, category=ItemCategories.TROPHY),
+    DDItemData(ItemNames.DD_MARK.value, classification=ItemClassification.progression,category=ItemCategories.KEY),
     DDItemData(ItemNames.FILLER_ITEM_1.value)
 ]
 

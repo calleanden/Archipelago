@@ -1,4 +1,4 @@
-from BaseClasses import Region
+from BaseClasses import Location, Region
 from typing import TYPE_CHECKING
 from .Types import DLCNames, RegionNames, LocationNames, ItemNames
 from .CustomDataClasses import DDLocationData, DDRegionData
@@ -21,6 +21,12 @@ region_list = [
         DDLocationData(LocationNames.Quests_0.value, default_item=ItemNames.RUINS_KEY.value,use_default=True)
         ]),
     DDRegionData(RegionNames.ABBEY.value,location_data=[
+        DDLocationData(LocationNames.Abbey_Cloister_1.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
+        DDLocationData(LocationNames.Abbey_Cloister_2.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
+        DDLocationData(LocationNames.Abbey_Cloister_3.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
+        DDLocationData(LocationNames.Abbey_Cloister_4.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
+        DDLocationData(LocationNames.Abbey_Cloister_5.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
+        DDLocationData(LocationNames.Abbey_Cloister_6.value,default_item=ItemNames.ABBEY_CLOISTER_PROG.value),
         ]),
     DDRegionData(RegionNames.BLACKSMITH.value,location_data=[
         DDLocationData(LocationNames.Blacksmith_Weaponsmithing_1.value, default_item = ItemNames.BLACKSMITH_WEAPONSMITHING.value)
@@ -32,14 +38,19 @@ region_list = [
     DDRegionData(RegionNames.SURVIVALIST.value),
     DDRegionData(RegionNames.TAVERN.value),
     DDRegionData(RegionNames.RUINS.value,location_data=[
-        DDLocationData(LocationNames.Quests_RUINS_1.value, default_item=ItemNames.TAVERN_KEY.value),
         DDLocationData(LocationNames.Ruins_Level_1.value, default_item=ItemNames.RUINS_NECRO_KEY_1.value),
-        DDLocationData(LocationNames.Ruins_Necromancer_1.value, default_item=ItemNames.RUINS_NECRO_TROPHY_1.value)
+        DDLocationData(LocationNames.Ruins_Necromancer_1.value, default_item=ItemNames.RUINS_NECRO_TROPHY_1.value),
+        DDLocationData(LocationNames.Ruins_Necromancer_1_mark.value, default_item=ItemNames.DD_MARK.value)
         ]),
     DDRegionData(RegionNames.WEALD.value),
     DDRegionData(RegionNames.WARRENS.value),
     DDRegionData(RegionNames.COVE.value),
-    DDRegionData(RegionNames.DARKEST.value),
+    DDRegionData(RegionNames.DARKEST.value,location_data=[
+        DDLocationData(LocationNames.DD_FinalQuest_1.value),
+        DDLocationData(LocationNames.DD_FinalQuest_2.value),
+        DDLocationData(LocationNames.DD_FinalQuest_3.value),
+        DDLocationData(LocationNames.DD_FinalQuest_4.value),
+        ]),
     DDRegionData(RegionNames.COURT.value, dlc=DLCNames.CC.value),
     DDRegionData(RegionNames.FARM.value, dlc=DLCNames.COM.value),
     DDRegionData(RegionNames.QUEST_GOALS.value, location_data=[
